@@ -1,42 +1,37 @@
-import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import { CartPage, CheckoutPage, CollectionsPage, ContentPage, OrderPage, ProductPage } from "./components/Storefront";
 
 function Router() {
-  // make sure to consider if you need authentication for certain routes
-  return (
-    <Switch>
-      <Route path={"/"} component={Home} />
-      <Route path={"/404"} component={NotFound} />
-      {/* Final fallback route */}
-      <Route component={NotFound} />
-    </Switch>
-  );
+  return <Switch>
+    <Route path="/" component={Home} />
+    <Route path="/colecoes" component={() => <CollectionsPage />} />
+    <Route path="/colecoes/:slug">{(params) => <CollectionsPage slug={params.slug} />}</Route>
+    <Route path="/produtos/:slug">{(params) => <ProductPage slug={params.slug} />}</Route>
+    <Route path="/kits"><ContentPage type="kits" /></Route>
+    <Route path="/presentes"><ContentPage type="presentes" /></Route>
+    <Route path="/aromas"><ContentPage type="aromas" /></Route>
+    <Route path="/sobre"><ContentPage type="sobre" /></Route>
+    <Route path="/como-usar"><ContentPage type="como-usar" /></Route>
+    <Route path="/faq"><ContentPage type="faq" /></Route>
+    <Route path="/entregas"><ContentPage type="entregas" /></Route>
+    <Route path="/trocas-e-devolucoes"><ContentPage type="trocas-e-devolucoes" /></Route>
+    <Route path="/privacidade"><ContentPage type="privacidade" /></Route>
+    <Route path="/termos-de-uso"><ContentPage type="termos-de-uso" /></Route>
+    <Route path="/contato"><ContentPage type="contato" /></Route>
+    <Route path="/carrinho" component={CartPage} />
+    <Route path="/checkout" component={CheckoutPage} />
+    <Route path="/pedido/:codigo">{(params) => <OrderPage code={params.codigo} />}</Route>
+    <Route path="/rastrear"><OrderPage code="DEMO-AUREA-001" tracking /></Route>
+    <Route path="/404" component={NotFound} />
+    <Route component={NotFound} />
+  </Switch>;
 }
 
-// NOTE: About Theme
-// - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
-//   to keep consistent foreground/background color across components
-// - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
-
-function App() {
-  return (
-    <ErrorBoundary>
-      <ThemeProvider
-        defaultTheme="light"
-        // switchable
-      >
-        <TooltipProvider>
-          <Toaster />
-          <Router />
-        </TooltipProvider>
-      </ThemeProvider>
-    </ErrorBoundary>
-  );
+export default function App() {
+  return <ErrorBoundary><ThemeProvider defaultTheme="light"><TooltipProvider><Router /></TooltipProvider></ThemeProvider></ErrorBoundary>;
 }
-
-export default App;
