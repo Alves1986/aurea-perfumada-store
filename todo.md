@@ -39,7 +39,7 @@
 
 ## Fase F — Qualidade e entrega
 - [x] Testes Vitest para regras críticas do carrinho e dados demonstrativos
-- [ ] Verificação visual desktop e mobile — preview URL indisponível nesta sessão
+- [x] Verificação visual desktop e mobile em desktop e mobile
 - [x] Revisão de acessibilidade, SEO técnico básico e estados vazios/erro
 - [x] Revisão final de `todo.md` e checkpoint antes da entrega
 - [x] Entrega da versão de prévia, sem publicação
@@ -52,3 +52,5 @@
 - [x] Implementar páginas de FAQ, entregas, trocas/devoluções, privacidade, termos e contato com conteúdo DEMO estruturado
 - [x] Construir carrinho, checkout DEMO, página de pedido e rastreio com estados e tratamento de erros
 - [x] Adicionar avisos visíveis de revisão jurídica/contábil e segurança de uso de velas nas páginas relevantes
+
+- [x] Executar capturas explícitas em viewport desktop das rotas principais (`/`, `/colecoes`, `/produtos/vela-aurora`, `/carrinho`, `/checkout`) e revisar visualmente antes do checkpoint final
