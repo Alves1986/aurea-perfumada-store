@@ -139,3 +139,14 @@
 - [x] Atualizar TikTok para https://www.tiktok.com/@aurea.perfumada
 - [x] Atualizar WhatsApp para https://api.whatsapp.com/send/?phone=42991534011&text&type=phone_number&app_absent=0
 - [x] Validar os três destinos oficiais no código e revisar acessibilidade/responsividade; checkpoint será salvo agora
+
+## Favicon e compartilhamento
+- [x] Criar favicon usando somente o símbolo da vela, sem a escrita da marca
+- [x] Configurar favicon no HTML de entrada com ativo persistente
+- [x] Adicionar botão “Compartilhar página” junto às redes sociais do rodapé
+- [x] Implementar compartilhamento nativo com fallback acessível de copiar link
+- [x] Validar desktop/mobile, feedback de sucesso/erro e checkpoint será salvo após a validação final
+
+- [x] Revisar visualmente o favicon final e confirmar somente o símbolo da vela, sem escrita residual
+- [x] Adicionar feedback visível para indisponibilidade ou erro no compartilhamento
+- [x] Preparar o estado final para checkpoint após favicon recortado e tratamento de erro
