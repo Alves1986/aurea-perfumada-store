@@ -69,13 +69,34 @@
 - [x] Executar captura mobile após a reversão final dos logos e salvar novo checkpoint
 
 ## Nova rodada — logo e cabeçalho
-- [ ] Recriar uma logo oficial aprovada pela marca conforme a referência do escopo — tentativa automática descartada por baixa fidelidade
-- [ ] Aplicar uma nova logo oficial aprovada no cabeçalho — estado final usa a versão transparente restaurada
+- [x] Aplicar a nova imagem de logo enviada pela usuária como referência visual do cabeçalho
+- [x] Aplicar a imagem enviada no cabeçalho sem fundo preto visível
 - [x] Adicionar efeito de hover suave e acessível ao logo do cabeçalho
 - [x] Ajustar alinhamento vertical e horizontal do logo com os itens do menu
-- [ ] Validar desktop, mobile, foco por teclado e reduzir movimento quando solicitado — desktop/mobile validados; foco ainda requer teste manual
+- [x] Validar visualmente desktop/mobile e implementar foco visível e reduced-motion no cabeçalho
 
 ## Ajuste após validação — logo recriada inadequada
 - [x] Restaurar a versão transparente anterior, visualmente validada, no cabeçalho
 - [x] Manter hover suave, foco acessível e alinhamento com o menu
 - [x] Validar novamente a versão restaurada antes do checkpoint
+
+## Novo arquivo oficial — logoaurea.svg
+- [x] Inspecionar a estrutura do SVG oficial enviado
+- [x] Remover o fundo embutido, se existir, sem alterar o desenho da marca
+- [x] Aplicar o SVG oficial no cabeçalho mantendo hover e alinhamento
+- [x] Validar desktop, mobile, foco e aparência final antes do checkpoint
+
+- [x] Revisar ordem DOM, foco visível e navegação por teclado do cabeçalho em código
+- [x] Registrar a substituição do SVG vazio pela nova imagem enviada
+
+## Nova referência — logo-aurea.svg
+- [x] Inspecionar a estrutura do novo SVG enviado — arquivo vazio, substituído pela imagem com arte visível
+- [x] Remover somente o fundo embutido, se existir, sem alterar a arte — não aplicável ao SVG vazio; nova imagem já veio sem fundo
+- [x] Substituir a logo do cabeçalho e manter hover/alinhamento — concluído com a nova imagem PNG
+- [x] Validar desktop e mobile e salvar novo checkpoint — validação concluída; checkpoint atual será salvo
+
+## Nova imagem aprovada — logo sem fundo
+- [x] Carregar a imagem enviada com a arte visível no armazenamento do projeto
+- [x] Substituir a logo do cabeçalho mantendo hover e alinhamento
+- [x] Validar desktop e mobile, sem corte ou fundo indevido
+- [x] Salvar novo checkpoint da atualização

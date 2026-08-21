@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "wouter";
 import { ArrowRight, ChevronDown, Menu, Search, ShoppingBag, Sparkles, X } from "lucide-react";
 
-const logoTop = "/manus-storage/logo-topo-original-transparente_209e5e99.png";
+const logoTop = "/manus-storage/Gemini_Generated_Image_bxe5iebxe5iebxe5-removebg-preview_d5762ebc.png";
 const logoFooter = "/manus-storage/logo-dark_62e2c7b9.jpeg";
 
 const demoProducts = [
