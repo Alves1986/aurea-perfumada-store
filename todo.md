@@ -67,3 +67,15 @@
 - [x] Validar as duas áreas e salvar checkpoint da reversão
 
 - [x] Executar captura mobile após a reversão final dos logos e salvar novo checkpoint
+
+## Nova rodada — logo e cabeçalho
+- [ ] Recriar uma logo oficial aprovada pela marca conforme a referência do escopo — tentativa automática descartada por baixa fidelidade
+- [ ] Aplicar uma nova logo oficial aprovada no cabeçalho — estado final usa a versão transparente restaurada
+- [x] Adicionar efeito de hover suave e acessível ao logo do cabeçalho
+- [x] Ajustar alinhamento vertical e horizontal do logo com os itens do menu
+- [ ] Validar desktop, mobile, foco por teclado e reduzir movimento quando solicitado — desktop/mobile validados; foco ainda requer teste manual
+
+## Ajuste após validação — logo recriada inadequada
+- [x] Restaurar a versão transparente anterior, visualmente validada, no cabeçalho
+- [x] Manter hover suave, foco acessível e alinhamento com o menu
+- [x] Validar novamente a versão restaurada antes do checkpoint
