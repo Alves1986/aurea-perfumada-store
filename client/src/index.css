@@ -130,3 +130,5 @@ h1 em,h2 em { color:#a77a39; font-style:italic; }
 @media(prefers-reduced-motion:reduce){.site-toast{transition:none}.back-to-top{transition:none}.back-to-top:hover,.back-to-top:active{transform:none}}
 
 .desktop-nav a.active{color:#8f6b32;font-weight:600}.desktop-nav a.active::after{transform:scaleX(1);transform-origin:left}.mobile-menu nav a.active{color:#cfa95c;border-left:2px solid #d9bd79;padding-left:14px}
+
+.mobile-menu-overlay{opacity:0;transition:opacity 220ms ease}.mobile-menu-overlay.is-open{opacity:1}.mobile-menu{transform:translateY(-10px);opacity:0;transition:transform 220ms cubic-bezier(.23,1,.32,1),opacity 180ms ease}.mobile-menu.is-open{transform:translateY(0);opacity:1}@media(prefers-reduced-motion:reduce){.mobile-menu-overlay,.mobile-menu{transition:none}.mobile-menu{transform:none;opacity:1}}

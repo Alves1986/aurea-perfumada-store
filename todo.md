@@ -172,3 +172,14 @@
 
 - [x] Registrar revisão visual final das páginas institucionais após o estado ativo do header — `/sobre`, `/kits` e `/como-usar` revisadas visualmente
 - [x] Salvar checkpoint da versão final com header compartilhado e estado ativo
+
+## Consistência das páginas internas
+- [x] Reutilizar o rodapé completo da home em todas as páginas internas
+- [x] Preservar redes sociais, compartilhar, voltar ao topo e toast no rodapé compartilhado
+- [x] Adicionar transição suave de abertura e fechamento do menu mobile
+- [x] Respeitar prefers-reduced-motion na animação do menu
+- [x] Adicionar breadcrumb semântico nas páginas internas com links funcionais
+- [x] Validar páginas internas em desktop/mobile e salvar novo checkpoint
+
+- [x] Registrar revisão visual final da home, kits e como usar após rodapé compartilhado, breadcrumb e menu animado
+- [x] Salvar checkpoint final desta rodada

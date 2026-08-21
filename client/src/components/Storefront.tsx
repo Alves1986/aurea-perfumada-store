@@ -1,7 +1,8 @@
 import { useMemo, useState } from "react";
 import { Link, useLocation } from "wouter";
-import { ArrowLeft, ArrowRight, Check, Minus, Plus, Search, ShoppingBag } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, ChevronRight, Minus, Plus, Search, ShoppingBag } from "lucide-react";
 import StoreHeader from "@/components/StoreHeader";
+import StoreFooter from "@/components/StoreFooter";
 import type { Product as CatalogProduct } from "@shared/store-models";
 import { demoProducts as catalogProducts, findDemoProduct } from "@/lib/store-data";
 
@@ -18,7 +19,9 @@ export function ProductGrid({ items = products, onAdd }: { items?: DemoProduct[]
 }
 
 export function PageShell({ eyebrow, title, lead, children }: { eyebrow: string; title: string; lead?: string; children?: React.ReactNode }) {
-  return <main className="min-h-screen bg-[#f6f1e9] text-[#382d27]"><div className="demo-bar">AMBIENTE DEMO · revisar informações antes da publicação</div><StoreHeader /><section className="page-hero"><div className="container"><span className="eyebrow">{eyebrow}</span><h1>{title}</h1>{lead && <p>{lead}</p>}</div></section>{children}<footer className="site-footer"><div className="container footer-bottom"><span>© 2026 Áurea Perfumada · conteúdo demonstrativo</span><Link href="/">Voltar ao início <ArrowRight size={14} /></Link></div></footer></main>;
+  const [location] = useLocation();
+  const breadcrumbLabel = location === "/" ? "Início" : title;
+  return <main className="min-h-screen bg-[#f6f1e9] text-[#382d27]"><div className="demo-bar">AMBIENTE DEMO · revisar informações antes da publicação</div><StoreHeader /><section className="page-hero"><div className="container"><nav className="breadcrumb" aria-label="Trilha de navegação"><Link href="/">Início</Link><ChevronRight size={14} aria-hidden="true" /><span aria-current="page">{breadcrumbLabel}</span></nav><span className="eyebrow">{eyebrow}</span><h1>{title}</h1>{lead && <p>{lead}</p>}</div></section>{children}<StoreFooter /></main>;
 }
 
 export function CollectionsPage({ slug }: { slug?: string }) {

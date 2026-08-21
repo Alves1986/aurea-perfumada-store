@@ -13,14 +13,17 @@ const navItems = [
 
 export default function StoreHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [menuRendered, setMenuRendered] = useState(false);
   const [location] = useLocation();
   const isActive = (href: string) => location === href || (href === "/colecoes" && location.startsWith("/produtos/"));
+  const openMenu = () => { setMenuRendered(true); window.setTimeout(() => setMenuOpen(true), 10); };
+  const closeMenu = () => { setMenuOpen(false); window.setTimeout(() => setMenuRendered(false), 220); };
 
   return (
     <>
       <header className="site-header">
         <div className="container header-inner">
-          <button className="icon-button mobile-only" aria-label="Abrir menu" onClick={() => setMenuOpen(true)}><Menu size={22} /></button>
+          <button className="icon-button mobile-only" aria-label="Abrir menu" onClick={openMenu}><Menu size={22} /></button>
           <Link href="/" className="brand-lockup" aria-label="Áurea Perfumada, início">
             <img src={logoTop} alt="Áurea Perfumada" className="brand-logo" />
             <span className="brand-wordmark">Áurea Perfumada</span>
@@ -35,10 +38,10 @@ export default function StoreHeader() {
         </div>
       </header>
 
-      {menuOpen && <div className="mobile-menu-overlay" role="dialog" aria-modal="true" aria-label="Menu principal">
-        <div className="mobile-menu">
-          <div className="mobile-menu-top"><span>Menu</span><button className="icon-button" onClick={() => setMenuOpen(false)} aria-label="Fechar menu"><X size={22} /></button></div>
-          <nav>{[...navItems, { href: "/como-usar", label: "Como usar" }].map((item) => <Link key={item.href} href={item.href} onClick={() => setMenuOpen(false)} className={isActive(item.href) ? "active" : undefined} aria-current={isActive(item.href) ? "page" : undefined}>{item.label}</Link>)}</nav>
+      {menuRendered && <div className={`mobile-menu-overlay${menuOpen ? " is-open" : ""}`} role="dialog" aria-modal="true" aria-label="Menu principal">
+        <div className={`mobile-menu${menuOpen ? " is-open" : ""}`}>
+          <div className="mobile-menu-top"><span>Menu</span><button className="icon-button" onClick={closeMenu} aria-label="Fechar menu"><X size={22} /></button></div>
+          <nav>{[...navItems, { href: "/como-usar", label: "Como usar" }].map((item) => <Link key={item.href} href={item.href} onClick={closeMenu} className={isActive(item.href) ? "active" : undefined} aria-current={isActive(item.href) ? "page" : undefined}>{item.label}</Link>)}</nav>
           <div className="mobile-menu-foot">Luz, aroma e presença para os seus momentos.</div>
         </div>
       </div>}
