@@ -150,3 +150,10 @@
 - [x] Revisar visualmente o favicon final e confirmar somente o símbolo da vela, sem escrita residual
 - [x] Adicionar feedback visível para indisponibilidade ou erro no compartilhamento
 - [x] Preparar o estado final para checkpoint após favicon recortado e tratamento de erro
+
+## Toast e voltar ao topo
+- [x] Adicionar toast elegante para confirmação de link copiado
+- [x] Garantir feedback acessível com aria-live e duração adequada
+- [x] Adicionar botão “Voltar ao topo” no rodapé
+- [x] Implementar rolagem suave, foco e suporte a movimento reduzido
+- [x] Validar desktop/mobile e salvar novo checkpoint
