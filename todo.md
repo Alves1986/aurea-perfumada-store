@@ -105,3 +105,17 @@
 - [x] Substituir o logo isolado pela assinatura visual completa da marca
 - [x] Ajustar largura, proporção, contraste e espaçamento em relação ao texto
 - [x] Validar o rodapé em desktop e mobile e salvar novo checkpoint
+
+## Atualização do rodapé — dourado e redes sociais
+- [x] Aplicar a logo dourada no rodapé com contraste adequado
+- [x] Adicionar hover suave e foco visível na logo do rodapé
+- [x] Incluir ícones clicáveis de Instagram, TikTok e WhatsApp com links configuráveis
+- [x] Rotular links sociais ainda não informados sem inventar URLs oficiais
+- [x] Validar desktop/mobile e acessibilidade; checkpoint salvo após os ajustes
+
+- [x] Tornar a logo do rodapé focável com link e estado focus-visible real
+- [x] Substituir placeholders mortos dos ícones sociais por rotas de contato configuráveis
+- [x] Confirmar visualmente o dourado e salvar checkpoint após os ajustes finais
+
+- [x] Executar captura mobile final do rodapé após os ajustes de links/foco
+- [x] Salvar checkpoint final após a validação mobile do rodapé dourado

@@ -109,3 +109,10 @@ h1 em,h2 em { color:#a77a39; font-style:italic; }
 .site-footer .footer-logo-lockup:hover{transform:scale(1.025);opacity:1}
 @media(max-width:800px){.site-footer .footer-logo-lockup{width:180px;height:46px}}
 @media(prefers-reduced-motion:reduce){.site-footer .footer-logo-lockup{transition:none}.site-footer .footer-logo-lockup:hover{transform:none}}
+
+.site-footer .footer-logo-lockup{filter:none;object-fit:contain;object-position:left center}
+.site-footer .footer-socials{margin:0 0 18px}.site-footer .footer-social-label{display:block;color:#d9bd79;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:9px}.site-footer .footer-social-list{display:flex;align-items:center;gap:8px}.site-footer .footer-social-link{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border:1px solid rgba(217,189,121,.42);border-radius:50%;color:#d9bd79;transition:transform 180ms cubic-bezier(.23,1,.32,1),background-color 180ms ease,color 180ms ease,border-color 180ms ease}.site-footer .footer-social-link:hover{transform:translateY(-2px);background:#d9bd79;color:#382d27;border-color:#d9bd79}.site-footer .footer-social-link:focus-visible{outline:2px solid #f0d89c;outline-offset:3px;background:rgba(217,189,121,.18);border-color:#f0d89c}.site-footer .footer-social-link:active{transform:scale(.97)}
+@media(prefers-reduced-motion:reduce){.site-footer .footer-social-link{transition:none}.site-footer .footer-social-link:hover{transform:none}}
+
+.site-footer .footer-logo-link{display:inline-flex;align-items:flex-start;border-radius:5px;transition:transform 180ms cubic-bezier(.23,1,.32,1)}.site-footer .footer-logo-link:hover{transform:translateY(-2px)}.site-footer .footer-logo-link:focus-visible{outline:2px solid #f0d89c;outline-offset:5px}.site-footer .footer-logo-link:active{transform:scale(.98)}
+@media(prefers-reduced-motion:reduce){.site-footer .footer-logo-link{transition:none}.site-footer .footer-logo-link:hover{transform:none}.site-footer .footer-logo-link:active{transform:none}}
