@@ -54,3 +54,8 @@
 - [x] Adicionar avisos visíveis de revisão jurídica/contábil e segurança de uso de velas nas páginas relevantes
 
 - [x] Executar capturas explícitas em viewport desktop das rotas principais (`/`, `/colecoes`, `/produtos/vela-aurora`, `/carrinho`, `/checkout`) e revisar visualmente antes do checkpoint final
+
+## Correção solicitada — logos
+- [x] Remover o fundo preto da aplicação do logo no topo sobre fundo claro
+- [x] Substituir o logo do rodapé por uma versão nítida e adequada ao tamanho de exibição
+- [x] Validar as duas aplicações em desktop e mobile e salvar checkpoint corrigido

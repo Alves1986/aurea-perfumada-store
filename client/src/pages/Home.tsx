@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Link } from "wouter";
 import { ArrowRight, ChevronDown, Menu, Search, ShoppingBag, Sparkles, X } from "lucide-react";
 
-const logoLight = "/manus-storage/logo-light_9d07d662.jpeg";
-const logoDark = "/manus-storage/logo-dark_62e2c7b9.jpeg";
+const logoTop = "/manus-storage/logo-topo-corrigido-crop_a992a500.png";
+const logoFooter = "/manus-storage/logo-rodape-corrigido-crop_26a049da.png";
 
 const demoProducts = [
   { name: "Vela Aurora", scent: "Baunilha & âmbar", price: "R$ 00,00", tone: "blush", tag: "DEMO" },
@@ -29,8 +29,7 @@ export default function Home() {
         <div className="container header-inner">
           <button className="icon-button mobile-only" aria-label="Abrir menu" onClick={() => setMenuOpen(true)}><Menu size={22} /></button>
           <Link href="/" className="brand-lockup" aria-label="Áurea Perfumada, início">
-            <img src={logoDark} alt="Áurea Perfumada" className="brand-logo dark-logo" />
-            <span className="brand-wordmark">Áurea Perfumada</span>
+            <img src={logoTop} alt="Áurea Perfumada" className="brand-logo-wide" />
           </Link>
           <nav className="desktop-nav" aria-label="Navegação principal">
             <Link href="/colecoes">Coleções</Link>
@@ -85,7 +84,7 @@ export default function Home() {
 
       <section className="newsletter-section"><div className="container newsletter-inner"><div><span className="eyebrow">receba novidades com calma</span><h2>Um pouco de luz<br /><em>na sua caixa de entrada.</em></h2></div><form className="newsletter-form" onSubmit={(e) => e.preventDefault()}><label htmlFor="email">Seu melhor e-mail</label><div><input id="email" type="email" placeholder="voce@email.com" /><button className="button button-dark" type="submit">Quero receber <ArrowRight size={17} /></button></div><small>Ao enviar, você concorda com o uso do contato para comunicações da marca. Sem promessa de desconto nesta versão DEMO.</small></form></div></section>
 
-      <footer className="site-footer"><div className="container footer-grid"><div><img src={logoLight} alt="Áurea Perfumada" className="footer-logo" /><p>Velas artesanais para perfumar ambientes, decorar com afeto e tornar pausas cotidianas mais especiais.</p></div><div><h3>Explorar</h3><Link href="/colecoes">Coleções</Link><Link href="/kits">Presentes</Link><Link href="/aromas">Aromas</Link><Link href="/sobre">A marca</Link></div><div><h3>Ajuda</h3><Link href="/como-usar">Como usar</Link><Link href="/entregas">Entregas</Link><Link href="/trocas-e-devolucoes">Trocas e devoluções</Link><Link href="/contato">Contato</Link></div><div><h3>Importante</h3><Link href="/privacidade">Privacidade</Link><Link href="/termos-de-uso">Termos de uso</Link><Link href="/faq">FAQ</Link><span className="footer-demo">ambiente DEMO</span></div></div><div className="container footer-bottom"><span>© 2026 Áurea Perfumada · conteúdo demonstrativo</span><span>Feito com presença.</span></div></footer>
+      <footer className="site-footer"><div className="container footer-grid"><div><span className="footer-logo-crop"><img src={logoFooter} alt="Áurea Perfumada" className="footer-logo" /></span><p>Velas artesanais para perfumar ambientes, decorar com afeto e tornar pausas cotidianas mais especiais.</p></div><div><h3>Explorar</h3><Link href="/colecoes">Coleções</Link><Link href="/kits">Presentes</Link><Link href="/aromas">Aromas</Link><Link href="/sobre">A marca</Link></div><div><h3>Ajuda</h3><Link href="/como-usar">Como usar</Link><Link href="/entregas">Entregas</Link><Link href="/trocas-e-devolucoes">Trocas e devoluções</Link><Link href="/contato">Contato</Link></div><div><h3>Importante</h3><Link href="/privacidade">Privacidade</Link><Link href="/termos-de-uso">Termos de uso</Link><Link href="/faq">FAQ</Link><span className="footer-demo">ambiente DEMO</span></div></div><div className="container footer-bottom"><span>© 2026 Áurea Perfumada · conteúdo demonstrativo</span><span>Feito com presença.</span></div></footer>
     </main>
   );
 }
