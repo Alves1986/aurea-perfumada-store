@@ -100,3 +100,8 @@
 - [x] Substituir a logo do cabeçalho mantendo hover e alinhamento
 - [x] Validar desktop e mobile, sem corte ou fundo indevido
 - [x] Salvar novo checkpoint da atualização
+
+## Correção do logo do rodapé
+- [x] Substituir o logo isolado pela assinatura visual completa da marca
+- [x] Ajustar largura, proporção, contraste e espaçamento em relação ao texto
+- [x] Validar o rodapé em desktop e mobile e salvar novo checkpoint

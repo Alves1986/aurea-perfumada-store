@@ -104,3 +104,8 @@ h1 em,h2 em { color:#a77a39; font-style:italic; }
 .site-header .brand-lockup:focus-visible{outline:2px solid var(--gold,#a77b35);outline-offset:5px;border-radius:4px}
 @media (prefers-reduced-motion: reduce){.site-header .brand-logo-wide{transition:none}.site-header .brand-lockup:hover .brand-logo-wide,.site-header .brand-lockup:focus-visible .brand-logo-wide{transform:none;filter:none}}
 @media(max-width:800px){.site-header .brand-logo-wide{width:44px;height:42px;object-fit:cover;object-position:left center}.site-header .brand-lockup{width:44px;overflow:hidden}}
+
+.site-footer .footer-logo-lockup{display:block;width:190px;height:48px;object-fit:contain;object-position:left center;margin:0 0 18px;filter:brightness(0) invert(1) sepia(.18) saturate(.45) opacity(.9);transition:transform 180ms cubic-bezier(.23,1,.32,1),opacity 180ms ease}
+.site-footer .footer-logo-lockup:hover{transform:scale(1.025);opacity:1}
+@media(max-width:800px){.site-footer .footer-logo-lockup{width:180px;height:46px}}
+@media(prefers-reduced-motion:reduce){.site-footer .footer-logo-lockup{transition:none}.site-footer .footer-logo-lockup:hover{transform:none}}
