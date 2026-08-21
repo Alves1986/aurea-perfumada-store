@@ -133,3 +133,9 @@
 - [x] Tornar o dourado da logo mais brilhante
 - [x] Reforçar o hover da logo e dos ícones sociais
 - [x] Validar desktop/mobile; checkpoint desta rodada será salvo agora
+
+## Perfis sociais oficiais
+- [x] Atualizar Instagram para https://www.instagram.com/aurea.perfumada
+- [x] Atualizar TikTok para https://www.tiktok.com/@aurea.perfumada
+- [x] Atualizar WhatsApp para https://api.whatsapp.com/send/?phone=42991534011&text&type=phone_number&app_absent=0
+- [x] Validar os três destinos oficiais no código e revisar acessibilidade/responsividade; checkpoint será salvo agora
