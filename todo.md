@@ -59,3 +59,11 @@
 - [x] Remover o fundo preto da aplicação do logo no topo sobre fundo claro
 - [x] Substituir o logo do rodapé por uma versão nítida e adequada ao tamanho de exibição
 - [x] Validar as duas aplicações em desktop e mobile e salvar checkpoint corrigido
+
+## Reversão solicitada — logos
+- [x] Reverter os logos regenerados que pioraram o resultado
+- [x] Restaurar o logo original de melhor qualidade no rodapé
+- [x] Corrigir somente o fundo preto do logo original do topo sem redesenhar a marca
+- [x] Validar as duas áreas e salvar checkpoint da reversão
+
+- [x] Executar captura mobile após a reversão final dos logos e salvar novo checkpoint
