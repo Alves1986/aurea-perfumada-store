@@ -5,9 +5,12 @@ import StoreHeader from "@/components/StoreHeader";
 import StoreFooter from "@/components/StoreFooter";
 
 const demoProducts = [
-  { name: "Vela Aurora", scent: "Baunilha & âmbar", price: "R$ 00,00", tone: "blush", tag: "DEMO" },
-  { name: "Vela Serena", scent: "Lavanda & cedro", price: "R$ 00,00", tone: "sage", tag: "DEMO" },
-  { name: "Vela Encontro", scent: "Figo & sândalo", price: "R$ 00,00", tone: "sand", tag: "DEMO" },
+  { name: "Vela Aurora", scent: "Baunilha & âmbar", price: "R$ 00,00", tone: "blush", tag: "DEMO · ACONCHEGO" },
+  { name: "Vela Serena", scent: "Lavanda & cedro", price: "R$ 00,00", tone: "sage", tag: "DEMO · PAUSA" },
+  { name: "Vela Encontro", scent: "Figo & sândalo", price: "R$ 00,00", tone: "sand", tag: "DEMO · PRESENÇA" },
+  { name: "Vela Brisa", scent: "Capim-limão & alecrim", price: "R$ 00,00", tone: "sage", tag: "DEMO · PAUSA" },
+  { name: "Vela Terra", scent: "Patchouli & musgo", price: "R$ 00,00", tone: "sand", tag: "DEMO · ACONCHEGO" },
+  { name: "Vela Solis", scent: "Bergamota & flor de laranjeira", price: "R$ 00,00", tone: "blush", tag: "DEMO · PRESENÇA" },
 ];
 
 const moments = [

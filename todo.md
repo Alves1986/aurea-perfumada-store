@@ -183,3 +183,10 @@
 
 - [x] Registrar revisão visual final da home, kits e como usar após rodapé compartilhado, breadcrumb e menu animado
 - [x] Salvar checkpoint final desta rodada
+
+## Catálogo demonstrativo aprimorado
+- [x] Criar novos produtos DEMO (Vela Brisa, Vela Terra, Vela Solis) com descrições sensoriais
+- [x] Definir famílias olfativas, pesos e tempos de queima fictícios para cada novo item — peso, dimensões e queima preenchidos na camada DEMO
+- [x] Atualizar a home com os novos destaques de produto
+- [x] Melhorar o visual dos cards de produto com badges de coleção e estados de hover — CSS explícito e badge de coleção adicionados
+- [x] Validar a exibição responsiva do novo catálogo; checkpoint desta rodada será salvo agora
