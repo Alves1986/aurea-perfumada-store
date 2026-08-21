@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "wouter";
-import { ArrowRight, ArrowUp, ChevronDown, Check, Copy, Instagram, Menu, MessageCircle, Music2, Search, Share2, ShoppingBag, Sparkles, X } from "lucide-react";
+import { ArrowRight, ArrowUp, ChevronDown, Check, Copy, Instagram, MessageCircle, Music2, Share2, Sparkles } from "lucide-react";
+import StoreHeader from "@/components/StoreHeader";
 
 const logoTop = "/manus-storage/Gemini_Generated_Image_bxe5iebxe5iebxe5-removebg-preview_d5762ebc.png";
 
@@ -60,33 +61,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#f6f1e9] text-[#382d27]">
       <div className="demo-bar">AMBIENTE DEMO · informações comerciais reais serão configuradas antes da publicação</div>
-      <header className="site-header">
-        <div className="container header-inner">
-          <button className="icon-button mobile-only" aria-label="Abrir menu" onClick={() => setMenuOpen(true)}><Menu size={22} /></button>
-          <Link href="/" className="brand-lockup" aria-label="Áurea Perfumada, início">
-            <img src={logoTop} alt="Áurea Perfumada" className="brand-logo" />
-            <span className="brand-wordmark">Áurea Perfumada</span>
-          </Link>
-          <nav className="desktop-nav" aria-label="Navegação principal">
-            <Link href="/colecoes">Coleções</Link>
-            <Link href="/kits">Presentes</Link>
-            <Link href="/aromas">Aromas</Link>
-            <Link href="/sobre">A marca</Link>
-          </nav>
-          <div className="header-actions">
-            <button className="icon-button" aria-label="Buscar"><Search size={20} /></button>
-            <Link href="/carrinho" className="cart-link" aria-label="Carrinho"><ShoppingBag size={20} /><span>0</span></Link>
-          </div>
-        </div>
-      </header>
-
-      {menuOpen && <div className="mobile-menu-overlay" role="dialog" aria-modal="true" aria-label="Menu principal">
-        <div className="mobile-menu">
-          <div className="mobile-menu-top"><span>Menu</span><button className="icon-button" onClick={() => setMenuOpen(false)} aria-label="Fechar menu"><X size={22} /></button></div>
-          <nav><Link href="/colecoes" onClick={() => setMenuOpen(false)}>Coleções</Link><Link href="/kits" onClick={() => setMenuOpen(false)}>Presentes</Link><Link href="/aromas" onClick={() => setMenuOpen(false)}>Aromas</Link><Link href="/sobre" onClick={() => setMenuOpen(false)}>A marca</Link><Link href="/como-usar" onClick={() => setMenuOpen(false)}>Como usar</Link></nav>
-          <div className="mobile-menu-foot">Luz, aroma e presença para os seus momentos.</div>
-        </div>
-      </div>}
+      <StoreHeader />
 
       <section className="hero-section">
         <div className="container hero-grid">

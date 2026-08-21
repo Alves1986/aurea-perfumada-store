@@ -157,3 +157,18 @@
 - [x] Adicionar botão “Voltar ao topo” no rodapé
 - [x] Implementar rolagem suave, foco e suporte a movimento reduzido
 - [x] Validar desktop/mobile e salvar novo checkpoint
+
+## Unificação do cabeçalho nas páginas internas
+- [x] Criar componente compartilhado de header com logo, menu, busca, carrinho e menu mobile
+- [x] Substituir o cabeçalho simplificado das páginas internas pelo padrão visual da home
+- [x] Garantir estado ativo, hover, foco e navegação consistente em todas as abas — estado ativo baseado na rota
+- [x] Validar home, kits, coleções, aromas e páginas institucionais em desktop/mobile — páginas institucionais ampliadas
+- [x] Salvar novo checkpoint após a unificação
+
+## Ajustes finais do header compartilhado
+- [x] Implementar estado ativo real com base na rota atual
+- [x] Revisar explicitamente as páginas institucionais restantes em desktop/mobile
+- [x] Salvar novo checkpoint após a unificação final do cabeçalho
+
+- [x] Registrar revisão visual final das páginas institucionais após o estado ativo do header — `/sobre`, `/kits` e `/como-usar` revisadas visualmente
+- [x] Salvar checkpoint da versão final com header compartilhado e estado ativo

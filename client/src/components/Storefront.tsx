@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { Link, useLocation } from "wouter";
 import { ArrowLeft, ArrowRight, Check, Minus, Plus, Search, ShoppingBag } from "lucide-react";
+import StoreHeader from "@/components/StoreHeader";
 import type { Product as CatalogProduct } from "@shared/store-models";
 import { demoProducts as catalogProducts, findDemoProduct } from "@/lib/store-data";
 
@@ -17,7 +18,7 @@ export function ProductGrid({ items = products, onAdd }: { items?: DemoProduct[]
 }
 
 export function PageShell({ eyebrow, title, lead, children }: { eyebrow: string; title: string; lead?: string; children?: React.ReactNode }) {
-  return <main className="min-h-screen bg-[#f6f1e9] text-[#382d27]"><div className="demo-bar">AMBIENTE DEMO · revisar informações antes da publicação</div><header className="simple-header"><Link href="/" className="simple-brand">Áurea Perfumada</Link><nav><Link href="/colecoes">Coleções</Link><Link href="/kits">Presentes</Link><Link href="/aromas">Aromas</Link><Link href="/carrinho"><ShoppingBag size={18} /> Carrinho</Link></nav></header><section className="page-hero"><div className="container"><span className="eyebrow">{eyebrow}</span><h1>{title}</h1>{lead && <p>{lead}</p>}</div></section>{children}<footer className="site-footer"><div className="container footer-bottom"><span>© 2026 Áurea Perfumada · conteúdo demonstrativo</span><Link href="/">Voltar ao início <ArrowRight size={14} /></Link></div></footer></main>;
+  return <main className="min-h-screen bg-[#f6f1e9] text-[#382d27]"><div className="demo-bar">AMBIENTE DEMO · revisar informações antes da publicação</div><StoreHeader /><section className="page-hero"><div className="container"><span className="eyebrow">{eyebrow}</span><h1>{title}</h1>{lead && <p>{lead}</p>}</div></section>{children}<footer className="site-footer"><div className="container footer-bottom"><span>© 2026 Áurea Perfumada · conteúdo demonstrativo</span><Link href="/">Voltar ao início <ArrowRight size={14} /></Link></div></footer></main>;
 }
 
 export function CollectionsPage({ slug }: { slug?: string }) {
