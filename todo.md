@@ -119,3 +119,17 @@
 
 - [x] Executar captura mobile final do rodapé após os ajustes de links/foco
 - [x] Salvar checkpoint final após a validação mobile do rodapé dourado
+
+## Atualização social e dourado do rodapé
+- [x] Registrar a URL social informada pela usuária — Linktree oficial
+- [x] Atualizar os ícones com a URL encontrada
+- [x] Alterar o texto para “Siga nossas redes”
+- [x] Tornar o dourado da logo mais brilhante e reforçar o hover
+- [x] Validar desktop/mobile; checkpoint desta rodada será salvo agora
+
+## Linktree oficial e destaque dourado
+- [x] Atualizar Instagram, TikTok e WhatsApp para https://linktr.ee/aureaperfumada
+- [x] Alterar o texto acima dos ícones para “Siga nossas redes”
+- [x] Tornar o dourado da logo mais brilhante
+- [x] Reforçar o hover da logo e dos ícones sociais
+- [x] Validar desktop/mobile; checkpoint desta rodada será salvo agora
