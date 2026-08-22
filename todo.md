@@ -190,3 +190,10 @@
 - [x] Atualizar a home com os novos destaques de produto
 - [x] Melhorar o visual dos cards de produto com badges de coleção e estados de hover — CSS explícito e badge de coleção adicionados
 - [x] Validar a exibição responsiva do novo catálogo; checkpoint desta rodada será salvo agora
+
+## Arquivamento no GitHub
+- [ ] Criar `CLAUDE.md` na raiz com contexto, arquitetura, regras DEMO e práticas do projeto
+- [ ] Verificar que o CLAUDE.md não contém credenciais ou dados sensíveis
+- [ ] Criar repositório privado no GitHub
+- [ ] Commitar e enviar o estado do projeto para o repositório
+- [ ] Verificar remoto, branch e arquivos enviados e entregar o endereço do repositório
