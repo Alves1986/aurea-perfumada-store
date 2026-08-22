@@ -192,8 +192,8 @@
 - [x] Validar a exibição responsiva do novo catálogo; checkpoint desta rodada será salvo agora
 
 ## Arquivamento no GitHub
-- [ ] Criar `CLAUDE.md` na raiz com contexto, arquitetura, regras DEMO e práticas do projeto
-- [ ] Verificar que o CLAUDE.md não contém credenciais ou dados sensíveis
-- [ ] Criar repositório privado no GitHub
-- [ ] Commitar e enviar o estado do projeto para o repositório
-- [ ] Verificar remoto, branch e arquivos enviados e entregar o endereço do repositório
+- [x] Criar `CLAUDE.md` na raiz com contexto, arquitetura, regras DEMO e práticas do projeto
+- [x] Verificar que o CLAUDE.md não contém credenciais ou dados sensíveis
+- [x] Criar repositório privado no GitHub
+- [x] Commitar e enviar o estado do projeto para o repositório
+- [x] Verificar remoto, branch e arquivos enviados e entregar o endereço do repositório
