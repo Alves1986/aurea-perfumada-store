@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "wouter";
 import { ArrowRight, ArrowUp, Check, Copy, Instagram, MessageCircle, Music2, Share2 } from "lucide-react";
 
-const logoTop = "/manus-storage/Gemini_Generated_Image_bxe5iebxe5iebxe5-removebg-preview_d5762ebc.png";
+const logoTop = "/favicon.svg";
 const socialLinks = [
   { label: "Instagram", icon: Instagram, href: "https://www.instagram.com/aurea.perfumada" },
   { label: "TikTok", icon: Music2, href: "https://www.tiktok.com/@aurea.perfumada" },

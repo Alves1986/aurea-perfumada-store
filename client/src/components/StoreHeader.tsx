@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, Search, ShoppingBag, X } from "lucide-react";
 
-const logoTop = "/manus-storage/Gemini_Generated_Image_bxe5iebxe5iebxe5-removebg-preview_d5762ebc.png";
+const logoTop = "/favicon.svg";
 
 const navItems = [
   { href: "/colecoes", label: "Coleções" },
