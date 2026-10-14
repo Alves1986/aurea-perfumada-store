@@ -8,12 +8,12 @@ function clampQuantity(value: Quantity) {
 }
 
 describe("catálogo DEMO da Áurea Perfumada", () => {
-  it("mantém seis produtos demonstrativos, slugs únicos e preços neutros", () => {
+  it("mantém seis produtos demonstrativos, slugs únicos, preços neutros e fotos cadastradas", () => {
     const slugs = demoProducts.map((product) => product.slug);
     expect(demoProducts).toHaveLength(6);
     expect(new Set(slugs).size).toBe(slugs.length);
     expect(demoProducts.every((product) => product.variations[0]?.price === 0)).toBe(true);
-    expect(demoProducts.every((product) => product.images[0]?.kind === "placeholder")).toBe(true);
+    expect(demoProducts.every((product) => product.images[0]?.kind === "real" && product.images[0]?.url.startsWith("/product-"))).toBe(true);
   });
 
   it("mantém aromas e descrições preenchidos para apresentação DEMO", () => {

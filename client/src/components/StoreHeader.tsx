@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, Search, ShoppingBag, X } from "lucide-react";
 
-const logoTop = "/favicon.svg";
+const logoTop = "/logo-aurea-cropped.png";
 
 const navItems = [
   { href: "/colecoes", label: "Coleções" },
@@ -35,8 +35,7 @@ export default function StoreHeader() {
         <div className="container header-inner">
           <button className="icon-button mobile-only" aria-label="Abrir menu" onClick={openMenu}><Menu size={22} /></button>
           <Link href="/" className="brand-lockup" aria-label="Áurea Perfumada, início">
-            <img src={logoTop} alt="Áurea Perfumada" className="brand-logo" />
-            <span className="brand-wordmark">Áurea Perfumada</span>
+            <img src={logoTop} alt="Áurea Perfumada" className="brand-logo-wide" />
           </Link>
           <nav className="desktop-nav" aria-label="Navegação principal">
             {navItems.map((item) => <Link key={item.href} href={item.href} className={isActive(item.href) ? "active" : undefined} aria-current={isActive(item.href) ? "page" : undefined}>{item.label}</Link>)}

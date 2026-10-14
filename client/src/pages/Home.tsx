@@ -5,9 +5,9 @@ import StoreHeader from "@/components/StoreHeader";
 import StoreFooter from "@/components/StoreFooter";
 
 const demoProducts = [
-  { slug: "vela-aurora", name: "Vela Aurora", scent: "Baunilha & âmbar", price: "R$ 00,00", tone: "blush", tag: "Aconchego", note: "quente · luminosa" },
-  { slug: "vela-serena", name: "Vela Serena", scent: "Lavanda & cedro", price: "R$ 00,00", tone: "sage", tag: "Pausa", note: "fresca · amadeirada" },
-  { slug: "vela-encontro", name: "Vela Encontro", scent: "Figo & sândalo", price: "R$ 00,00", tone: "sand", tag: "Presença", note: "envolvente · elegante" },
+  { slug: "vela-aurora", name: "Vela Aurora", scent: "Baunilha & âmbar", price: "R$ 00,00", tone: "blush", tag: "Aconchego", note: "quente · luminosa", image: "/product-aurora.jpg" },
+  { slug: "vela-serena", name: "Vela Serena", scent: "Lavanda & cedro", price: "R$ 00,00", tone: "sage", tag: "Pausa", note: "fresca · amadeirada", image: "/product-serena.jpg" },
+  { slug: "vela-encontro", name: "Vela Encontro", scent: "Figo & sândalo", price: "R$ 00,00", tone: "sand", tag: "Presença", note: "envolvente · elegante", image: "/product-encontro.jpg" },
 ];
 
 const moments = [
@@ -48,7 +48,7 @@ export default function Home() {
 
       <section className="section section-light">
         <div className="container"><div className="section-heading"><div><span className="eyebrow">uma seleção para começar</span><h2>Pequenas luzes,<br /><em>grandes atmosferas.</em></h2></div><Link href="/colecoes" className="text-link desktop-only">Ver todas as velas <ArrowRight size={16} /></Link></div>
-          <div className="product-grid home-product-grid">{demoProducts.map((product) => <article className="product-card" key={product.name}><Link href={`/produtos/${product.slug}`} className={`product-visual ${product.tone}`}><span className="collection-badge">{product.tag}</span><div className="placeholder-candle"><span className="candle-flame small" /><div className="candle-label">ÁUREA</div></div><span className="photo-label">foto real a preencher</span></Link><div className="product-info"><div><h3>{product.name}</h3><p>{product.scent}</p><small>{product.note}</small></div><strong>{product.price}</strong></div></article>)}</div>
+          <div className="product-grid home-product-grid">{demoProducts.map((product) => <article className="product-card" key={product.name}><Link href={`/produtos/${product.slug}`} className={`product-visual ${product.tone} product-photo-link`}><img src={product.image} alt={`${product.name} — vela artesanal`} className="product-photo" /><span className="photo-scrim" /><span className="collection-badge">{product.tag}</span><span className="photo-label photo-label-on-image">ver detalhes</span></Link><div className="product-info"><div><h3>{product.name}</h3><p>{product.scent}</p><small>{product.note}</small></div><strong>{product.price}</strong></div></article>)}</div>
           <Link href="/colecoes" className="text-link mobile-only center-link">Ver todas as velas <ArrowRight size={16} /></Link>
         </div>
       </section>
